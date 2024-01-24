@@ -101,7 +101,7 @@ export default function Tasks() {
     }
   };
   return (
-    <div className="flex flex-col border border-red-500">
+    <div className="flex flex-col ">
       <div className="w-full  text-black flex items-center justify-center m-auto max-w-screen-xl border-2 border-violet-600 p-2 rounded-md">
         <div className="mr-2">➕</div>
         <input
