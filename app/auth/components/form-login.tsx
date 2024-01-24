@@ -65,7 +65,7 @@ const LoginForm = () => {
           )}
           <button
             type="submit"
-            className="mt-10 bg-rose-950 text-slate-50 p-3 rounded"
+            className="mt-10 bg-violet-600 text-slate-50 p-3 rounded"
           >
             Entrar
           </button>
