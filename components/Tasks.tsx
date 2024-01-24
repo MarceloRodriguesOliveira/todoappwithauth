@@ -101,7 +101,7 @@ export default function Tasks() {
     }
   };
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <div className="w-full  text-black flex items-center justify-center m-auto max-w-screen-xl border-2 border-violet-600 p-2 rounded-md">
         <div className="mr-2">➕</div>
         <input
@@ -121,11 +121,11 @@ export default function Tasks() {
             value={updateName}
             placeholder="Altere o nome da tarefa"
             onChange={(e) => setUpdateName(e.target.value)}
-            className="border border-green-800 w-full px-1 "
+            className=" w-full px-1 "
           />
           <button
             onClick={() => handleUpdateTaskName(selectedId, updateName)}
-            className="border border-red-700 px-2 py-1 text-violet-700 text-xl"
+            className=" px-2 py-1 text-violet-700 text-xl"
           >
             <FaPlus />
           </button>
@@ -139,7 +139,7 @@ export default function Tasks() {
               key={tarefa.id}
               className="w-full border-2 flex justify-between items-center  border-violet-600 my-6 p-3 rounded-md bg-white shadow-md "
             >
-              <div className="flex gap-x-1 border border-blue-900 items-center">
+              <div className="flex gap-x-1  items-center">
                 <div>
                   <input
                     type="checkbox"
@@ -158,7 +158,7 @@ export default function Tasks() {
                   </label>
                 </div>
               </div>
-              <div className="border border-red-900 flex text-violet-700 text-2xl gap-x-2 ">
+              <div className="flex text-violet-700 text-2xl gap-x-2 ">
                 <button
                   onClick={() => {
                     showEditMenu(), setSelectedId(tarefa.id);
