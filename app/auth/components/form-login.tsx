@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 const LoginForm = () => {
   const router = useRouter();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("user@email.com");
+  const [password, setPassword] = useState("123");
   const [error, setError] = useState("");
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -48,6 +48,7 @@ const LoginForm = () => {
               type="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
               className="border rounded w-full p-3"
             />
           </div>
@@ -57,6 +58,7 @@ const LoginForm = () => {
               type="password"
               name="password"
               onChange={(e) => setPassword(e.target.value)}
+              value={password}
               className="border rounded w-full p-3"
             />
           </div>
